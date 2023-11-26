@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/47f57ceeea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo_index.css">
+    <link rel="stylesheet" href="estilos_contenido.css">
+    <link rel="stylesheet" href="estilo_calculadora.css">
+    <link rel="stylesheet" href="estilos_lista.css">
+    <title>AtHome</title>
+</head>
+<body>
+    <!-- Enacbezado -->
+    <header class="encabezado">
+        <img src="imagenes/Captura.PNG" alt="">
+        <h1>Gestion de Renta</h1>
+        <div class="clearfix"> </div>
+        <nav class="menu">
+            <a href="index.html">
+            <i style="cursor:pointer ;" class="fa-solid fa-right-from-bracket"></i> Cerrar sesion
+            </a>
+        </nav>
+    </header>
+    <!-- Contenido menu lateral -->
+    <div class="content">
+        <!-- Menu vertical -->
+        <div class="columna">
+            <ul>
+                <li>
+                    <a href="perfil_usuario.html">
+                        Operaciones
+                    </a>
+                    </li>
+                    <li>
+                        <a href="lista_cliente.html">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            Clientes
+                           
+                        </a>
+                    </li>
+                    <li>
+                    <a href="propiedades.html">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        Propiedades.
+                       
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-house"></i>
+                        Cotizar Contrato.
+                      
+                    </a>
+                        
+                </li>
+                <li>
+                    <a href="contratos.html">
+                        <i class="fa-solid fa-list-check"></i>
+                        Contratos Activos
+                       
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-eye"></i>
+                        Consultar inmueble
+                     
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Agendar cita.
+                       
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="tabcontent">
+            <div class="lista">
+                <h2 >Lista Contrato</h2>
+            
+                <div class="clearfix"></div>
+                <table>
+                    <!-- primera fila -->
+                    <tr>
+                        <th>ID</th>
+                        <th>Imagen</th>
+                        <th>Nombre propietario</th>
+                        <th>Apellido paterno</th>
+                        <th>Apellido materno</th>
+                        <th>Precio</th>
+                        <th>Meses a rentar</th>
+                        <th colspan="2">Operaciones</th>
+                    </tr>
+                    <!-- Segunda fila -->
+                    <tr>
+                        <td>01</td>
+                        <td><img src="imagenes/IMG_5640.JPG" alt=""></td>
+                        <td> Jose Javier</td>
+                        <td>Contreras</td>
+                        <td>Hernandez</td>
+                        <td> 1500$ Al mes</td>
+                        <td>20 meses</td>
+                        <td id="operaciones">
+                            <a href="calcular_renta.html">
+                            <i  class="fas fa-add"></i>
+                        </a>
+                        </td>
+                        <td id="operaciones">
+                            <a href="calcular_renta.html">
+                                <i class="fa-solid fa-rotate-right"></i>
+                            </a>
+                        </td>
+                        <td id="operaciones">
+                            <a href="">
+                            <i  class="fas fa-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <!-- Cuarta fila -->
+                        <td>03</td>
+                        <td><img src="imagenes/IMG_5643.JPG" alt=""></td>
+                        <td> Gustavo</td>
+                        <td>Cordoba</td>
+                        <td>Ramos</td>
+                        <td>2500$ Al mes</td>
+                        <td>5 meses</td>
+                        <td id="operaciones">
+                            <a href="calcular_renta.html">
+                            <i class="fas fa-add"></i>
+                        </a>
+                        </td>
+                        <td id="operaciones">
+                            <a href="calcular_renta.html">
+                                <i class="fa-solid fa-rotate-right"></i>
+                            </a>
+                        </td>
+
+                        <td id="operaciones">
+                            <a href="">
+                                <i class="fa-solid fa-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                       
+                    <tr>
+                        <!-- Quinta fila -->
+                        <td>05</td>
+                        <td><img src="imagenes/IMG_5.jpg" alt=""></td>
+                        <td>Martin</td>
+                        <td>Martinez</td>
+                        <td>Bandala</td>
+                        <td>1900$ Al mes</td>
+                        <td>3 meses</td>
+                        <td id="operaciones">
+                            <a href="calcular_renta.html">
+                            <i  class="fas fa-add"></i>
+                        </a>
+                        </td>
+                        <td id="operaciones">
+                            <a href="calcular_renta.html">
+                                <i class="fa-solid fa-rotate-right"></i>
+                            </a>
+                        </td>
+
+                        <td id="operaciones">
+                            <a href="">
+                                <i class="fa-solid fa-trash"></i>
+                            </a>
+                        </td>
+                        
+                    </tr>
+                    
+                   
+                </table>
+                </div>
+    
+            </div>
+    
+        </div>
+       
+    </div>
+
+        <footer class="pie">
+            <table>
+                    <tr>
+                      <td>&#169; Yumper's 2023 Todos los derechos reservados <br>
+                        <i class="fa-duotone fa-phone"></i>
+                        Contacto: 5535514091 <br>
+                        <i class="fa-solid fa-envelope"></i>
+                        Correo electronico: josejavierch2004@gmail.com <br> <br>
+                    
+                      </td>
+                      <td>
+                        <i id="fa"   class="fa-brands fa-facebook"></i>
+                        <i id="ins" class="fa-brands fa-instagram"></i>
+                        <i id="wh" class="fa-brands fa-whatsapp"></i>
+                      </td>
+          
+                    </tr>
+           </table>
+                </footer>
+    
+    </body>
+    </html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/47f57ceeea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo_index.css">
+    <link rel="stylesheet" href="estilos_contenido.css">
+    <link rel="stylesheet" href="estilo_calculadora.css">
+    <title>AtHome</title>
+</head>
+<body>
+    <!-- Enacbezado -->
+    <header class="encabezado">
+        <img src="imagenes/Captura.PNG" alt="">
+        <h1>Gestion de Renta</h1>
+        <div class="clearfix"> </div>
+        <nav class="menu">
+            <a href="index.html">
+            <i style="cursor:pointer ;" class="fa-solid fa-right-from-bracket"></i> Cerrar sesion
+            </a>
+        </nav>
+    </header>
+    <!-- Contenido menu lateral -->
+    <div class="content">
+        <!-- Menu vertical -->
+        <div class="columna">
+            <ul>
+                <li>
+                    <a href="perfil_usuario.html">
+                        Operaciones
+                    </a>
+                    </li>
+                    <li>
+                        <a href="lista_cliente.html">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            Clientes
+                           
+                        </a>
+                    </li>
+                    <li>
+                    <a href="propiedades.html">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        Propiedades
+                       
+                    </a>
+                </li>
+                <li>
+                    <a href="calcular_renta.html">
+                        <i class="fa-solid fa-house"></i>
+                        Cotizar Contrato
+                      
+                    </a>
+                        
+                </li>
+                <li>
+                    <a href="contratos.html">
+                        <i class="fa-solid fa-list-check"></i>
+                        Contratos Activos
+                       
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-eye"></i>
+                        Consultar inmueble
+                     
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Agendar cita.
+                       
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <h2 id="titulo">Contratos</h2>
+        <div id="formularioPersona">
+            
+    <form id="rentCalculatorPersona">
+        <label for="seleccion">Selecciona un Cliente:</label> 
+        <select id="seleccion" name="seleccion" required>
+            <option value="" disabled selected>Elige un nombre</option>
+            <option value="Javier">Jose Javier Contreras Hernandez</option>
+            <option value="Omar">Pablo Alan Galicia Bernal</option>
+            <option value="gus">Gustavo Cordoba Ramos</option>
+            <option value="omar">Omar Zabaleta Angeles</option>
+            <option value="mar">Martin Martinez Bandala</option>
+        </select> <br>
+        <br>
+        <label for="text">Inicio de contrato</label>
+        <input type="date" id="ct" required>
+
+        <label for="text">Fin de contrato</label>
+        <input type="date" id="cf" required>
+        
+    </form>
+</div>
+
+<div id="formularioAlquiler">
+    <form id="rentCalculatorAlquiler"> 
+       
+
+        <label for="monthlyRent">Monto del Alquiler Mensual:</label>
+        <input type="number" id="monthlyRent" name="monthlyRent" required>
+
+        <label for="leaseDuration">Duración del Contrato (en meses):</label>
+        <input type="number" id="leaseDuration" name="leaseDuration" required>
+
+        <label for="totalRent">Total de Renta:</label>
+        <input type="text" id="totalRent" name="totalRent" readonly>
+
+        <button type="button" onclick="calculateRent()">Confirmar Contrato</button>
+    </form>
+</div>
+
+    
+        <script>
+            function calculateRent() {
+                var monthlyRent = parseFloat(document.getElementById('monthlyRent').value);
+                var leaseDuration = parseInt(document.getElementById('leaseDuration').value);
+    
+                var totalRent = monthlyRent * leaseDuration;
+    
+                document.getElementById('totalRent').value = '$' + totalRent.toFixed(2);
+            }
+        </script>
+       
+    </div>
+    <footer class="pie">
+        <table>
+                <tr>
+                  <td>&#169; Yumper's 2023 Todos los derechos reservados <br>
+                    <i class="fa-duotone fa-phone"></i>
+                    Contacto: 5535514091 <br>
+                    <i class="fa-solid fa-envelope"></i>
+                    Correo electronico: josejavierch2004@gmail.com <br> <br>
+                
+                  </td>
+                  <td>
+                    <i id="fa"   class="fa-brands fa-facebook"></i>
+                    <i id="ins" class="fa-brands fa-instagram"></i>
+                    <i id="wh" class="fa-brands fa-whatsapp"></i>
+                  </td>
+      
+                </tr>
+       </table>
+            </footer>
+
+</body>
+</html>

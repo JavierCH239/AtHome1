@@ -1,0 +1,66 @@
+#rentCalculatorPersona,
+#rentCalculatorAlquiler {
+    max-width: 690px;
+    margin: auto;
+    width: 100%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#rentCalculatorPersona label,
+#rentCalculatorAlquiler label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+#rentCalculatorPersona input,
+#rentCalculatorAlquiler input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+#rentCalculatorPersona button,
+#rentCalculatorAlquiler button {
+    background-color: bisque;
+    color: gray;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 50%;
+ 
+}
+
+#rentCalculatorPersona button:hover,
+#rentCalculatorAlquiler button:hover {
+    background-color: whitesmoke;
+    color: royalblue;
+}
+
+#titulo h2 {
+    color: royalblue;
+    padding: 1% 0.5%;
+    font-size: 1.5vw;
+}
+
+#rentCalculatorPersona input,
+#rentCalculatorAlquiler input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#rentCalculatorPersona,
+#rentCalculatorAlquiler {
+    width: 100%;
+    background-color: whitesmoke;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1vw;
+    margin: auto;
+}

@@ -1,0 +1,54 @@
+
+
+  .form-container {
+    display: flex;
+    width: 88%;
+    background-color: whitesmoke;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1vw;
+  }
+
+  .form-half {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .form-half:first-child {
+    margin-right: 10px;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  button {
+
+    background-color: wheat;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: whitesmoke;
+    color: royalblue;
+
+  }
+
+  .titel{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5vw;
+    text-align: center;
+    padding: 3% 3%;
+    background-color: aliceblue;
+    color: royalblue;
+    border-radius: 5px;
+    box-shadow: inset;
+  }
